@@ -19,7 +19,7 @@ export let logs = [
         ],  
         "link": "https://virum-gym.dk"
     },{
-        "title": "Modul 4",
+        "title": "Modul 5",
         "paragraph": "Udfyld her",
         "list": [
             "Pkt1",
