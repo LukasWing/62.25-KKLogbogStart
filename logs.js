@@ -6,7 +6,8 @@ export let logs = [
             "Husk",
             "Løste opgaver",
             "Havde pause"
-        ]
+        ],
+        "link": "https://virum-gym.dk"
     },
     {
         "title": "Modul 4",
@@ -15,6 +16,16 @@ export let logs = [
             "Pkt1",
             "Pkt2",
             "Osv"
-        ]
+        ],  
+        "link": "https://virum-gym.dk"
+    },{
+        "title": "Modul 4",
+        "paragraph": "Udfyld her",
+        "list": [
+            "Pkt1",
+            "Pkt2",
+            "Osv"
+        ],  
+        "link": "https://virum-gym.dk"
     }
 ];

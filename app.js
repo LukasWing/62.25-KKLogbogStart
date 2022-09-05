@@ -1,13 +1,14 @@
 import {logs} from "./logs.js";
-console.log(logs); 
+displayAllLogs();
 
-for (let i = 0; i < logs.length; i++) {
-    const logEntry = logs[i];
-    let logDiv = document.createElement('div');
-    document.getElementById('logs').appendChild(logDiv);
-    displayLogEntry(logDiv, logEntry);
+function displayAllLogs() {
+    for (let i = 0; i < logs.length; i++) {
+        const logEntry = logs[i];
+        let logDiv = document.createElement('div');
+        document.getElementById('logs').appendChild(logDiv);
+        displayLogEntry(logDiv, logEntry);
+    }
 }
-displayLogEntry(document.getElementById("modul3"), logs[0]);
 
 function displayLogEntry(logElement, logEntry) {  
     logElement.innerHTML += `<h1>${logEntry.title}</h1>`;
@@ -15,6 +16,14 @@ function displayLogEntry(logElement, logEntry) {
     let ulElement = document.createElement('ul');
     logElement.appendChild(ulElement);
     populateList(logElement, logEntry.list);
+    displayLink(logEntry, logElement);
+}
+
+function displayLink(logEntry, logElement) {
+    const linkElement = document.createElement('a');
+    linkElement.innerText = "link";
+    linkElement.setAttribute('href', logEntry.link);
+    logElement.appendChild(linkElement);
 }
 
 function populateList(ulElement, logEntryList) {
